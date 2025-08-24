@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carousel Layout</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: url('../images/pexels-suvan-chowdhury-37305-737568.jpg') no-repeat center center fixed;
+      color: #fff;
+      background-size: cover;
+
+      text-align: center;
+    }
+    .carousel-slide{
+        border: 1px solid #555;
+        padding: 20px;
+        margin: 15px;    
+    } 
+    .card {
+      background: #1c1c1c;
+      border: 1px solid #555;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 15px;
+      color: white;
+
+    }
+    .btn-watch {
+      background: #dc420a;
+      color: white;
+      font-weight: bold;
+      border-radius: 8px;
+      padding: 10px 20px;
+    }
+    .btn-watch:hover {
+      background: #244a85;
+    }
+    footer {
+      margin-top: 10px;
+      padding: 10px;
+      border-top: 1px solid #555;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Carousel -->
+  <div id="carouselExampleIndicators" class="carousel-slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="d-flex justify-content-center align-items-center" style="height: 200px;">
+          <img src="../images/bhut&bhutu(1).jpeg" width="350px" height="350px" alt="">
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="d-flex justify-content-center align-items-center" style="height: 200px;">
+          <img src="../images/Bhut&Bhutu(2).jpeg" width="350px" height="350px" alt="">
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div  class="d-flex justify-content-center align-items-center" style="height: 200px;">
+          <img src="../images/Bhut&Bhutu(3).jpeg" width="350px" height="300px" alt="">
+
+        </div>
+      </div>
+    </div>
+    
+    <!-- Cards Section -->
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-3">
+                <div class="card">
+                    
+                    <h4><b>Bhutu's favourite</b></h4>
+                    <p>click watch now please bhutuu</p>
+                    
+                    <button onclick="window.open('https://www.youtube.com/watch?v=K4wWILLmVx0&list=RDK4wWILLmVx0&start_radio=1','_blank')" class="btn btn-watch" >watch now</button>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <h4><b>Bhutu r nach puro jhinku</b></h4>
+                    <p>click watch now please bhutu</p>
+                    <button onclick="window.open('https://drive.google.com/file/d/1CNR8ZFdciJ4CLp4N6aapzq2aHD0S_x7s/view?usp=sharing','_blank')" class="btn btn-watch">watch now</button>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <h4><b>Amarr sonaa bhutuuu</b></h4>
+                    <p>click watch now bhutu please</p>
+                    <button onclick="window.open('https://drive.google.com/file/d/1T2sdNRKyWzyYXd72T_QDb03fNUFPh4QG/view?usp=sharing','_blank')" class="btn btn-watch">watch now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+  <!-- Footer -->
+  <footer>
+    <p>copyright - AbirTalukder</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
